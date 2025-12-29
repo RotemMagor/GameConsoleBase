@@ -20,8 +20,9 @@ namespace GameConsoleBase.Pages
 			Console.BackgroundColor= ConsoleColor.Blue;
 			HorizontalCenter("Enjoy a variety of classic games!");
 			Console.ResetColor();
-			//Screen next =new  MainMenuScreen();
-			//next.Show();
+			Console.ReadKey();
+			Screen next = new MainMenuScreen();
+			next.Show();
 			Console.Clear();
 			HorizontalCenter("Good Bye");
 			

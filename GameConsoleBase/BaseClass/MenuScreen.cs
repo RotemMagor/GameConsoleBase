@@ -40,7 +40,7 @@ namespace GameConsoleBase.BaseClass
 					if (choose >= 1 && choose < index)
 					{
 						menuItems.ElementAt(choose - 1).Value.Show();
-						
+
 					}
 					else if (choose == index)
 					{
@@ -49,10 +49,19 @@ namespace GameConsoleBase.BaseClass
 					else
 					{
 						Console.WriteLine("Invalid option. Please try again.");
-						Show();
+						Console.ReadKey();
 					}
 
 				}
+				else
+				{
+					Console.WriteLine("Invalid option. Please try again.");
+					Console.ReadKey();
+					//Show();
+				}
+
+					base.Show();
+				
 			}
 		
 			

@@ -16,6 +16,7 @@ namespace GameConsoleBase.Pages
 		{
 			base.Show();
 			Console.ReadKey();
+			Console.Clear();
 		}
 	}
 }
